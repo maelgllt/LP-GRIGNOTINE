@@ -81,7 +81,7 @@ body {
     margin-bottom: 10px;
 }
 
-.text-container p {
+.text-container p, .text-container li {
     font-size: 18px;
     color: #555;
 }
