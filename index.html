@@ -3,27 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Réenchanter le Goûter</title>
+    <title>GRIGNOTINE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Des goûters sains et locaux pour vos enfants</h1>
-        <p>Livrés directement à votre porte, avec suivi alimentaire personnalisé.</p>
-        <button id="cta-button">Découvrez nos produits</button>
+    <!-- Bandeau en haut avec logo et titre -->
+    <header class="header-banner">
+        <div class="header-content">
+            <img src="logo.png" alt="Logo Grignotine" class="logo">
+            <h1>GRIGNOTINE</h1>
+        </div>
     </header>
 
-    <section id="avantages">
-        <h2>Pourquoi choisir notre service ?</h2>
-        <ul>
-            <li>Produits sains et locaux</li>
-            <li>Suivi personnalisé pour chaque enfant</li>
-            <li>Livraison rapide et fiable</li>
-        </ul>
+    <h2 class="title">Réenchantons le goûter !</h2>
+
+    <!-- Première section avec image à gauche et texte à droite -->
+    <section class="content-section">
+        <div class="text-container">
+            <h2>Qui sommes-nous ?</h2>
+            <p>Dans le cadre de notre projet étudiant à MyDigitialSchool, nous travaillons sur une idée innovante : proposer des solutions pour des goûters plus sains et équilibrés, 
+                tout en valorisant les produits de producteurs locaux.</p>
+        </div>
+        <div class="image-container">
+            <img src="./images/image1.jpg" alt="cookies">
+        </div>
     </section>
 
+    <!-- Deuxième section avec image à droite et texte à gauche -->
+    <section class="content-section">
+        <div class="image-container">
+            <img src="./images/image2.png" alt="enfant">
+        </div>
+        <div class="text-container">
+            <h2>Notre projet</h2>
+            <p>L’objectif serait de réaliser une box livrée à domicile contenant soit :</p>
+            <li>Des goûters préparés avec des ingrédients locaux pour votre enfant</li>
+            <li>Des recettes et ingrédients locaux pour que vous puissiez passer un bon moment avec votre enfant afin de réaliser son goûter</li>
+        </div>
+    </section>
+
+    <div class="form-container">
+        <h2>Se pré-inscrire</h2>
+        <form action="#" method="post" class="cta-form">
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="input-group">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Âge :</label>
+                <input type="number" id="age" name="age" min="0" required>
+            </div>
+            <button type="submit" class="cta-button">Envoyer</button>
+        </form>
+    </div>
+
+    <!-- Pied de page -->
     <footer>
-        <p>&copy; 2024 Réenchanter le Goûter | Tous droits réservés</p>
+        <p>&copy; 2024 GRIGNOTINE | Tous droits réservés</p>
     </footer>
 
     <script src="script.js"></script>
