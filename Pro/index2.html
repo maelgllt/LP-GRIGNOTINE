@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les P'tits Sorciers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Bandeau en haut avec logo et titre -->
+<header class="header-banner">
+    <div class="header-content">
+        <img src="logo.png" alt="Logo Les P'tits Sorciers" class="logo">
+        <h1>Les P'tits Sorciers</h1>
+    </div>
+</header>
+
+<h2 class="title">Réenchantons le goûter !</h2>
+
+<!-- Première section avec image à gauche et texte à droite -->
+<section class="content-section">
+    <div class="text-container">
+        <h2>Qui sommes-nous ?</h2>
+        <p>Dans le cadre de notre projet étudiant à MyDigitialSchool, nous travaillons sur une idée innovante : proposer des solutions pour des goûters plus sains et équilibrés,
+            tout en valorisant les produits de producteurs locaux.</p>
+    </div>
+    <div class="image-container">
+        <img src="./images/image1.jpg" alt="cookies">
+    </div>
+</section>
+
+<!-- Deuxième section avec image à droite et texte à gauche -->
+<section class="content-section">
+    <div class="image-container">
+        <img src="./images/image2.png" alt="enfant">
+    </div>
+    <div class="text-container">
+        <h2>Notre projet</h2>
+        <p>L’objectif serait de vous livrer des goûters pour que les enfants de votre organisation puissent consommer des produit locaux, équilibrés et non ultra-transformés.
+            Que ce soit pour des évènements ou pour les enfants restant en études</p>
+    </div>
+</section>
+
+<div class="form-container">
+    <h2>Se pré-inscrire</h2>
+    <form action="#" method="post" class="cta-form">
+        <div class="form-group">
+            <div class="input-group">
+                <label for="nom-entreprise">Nom de l'entreprise :</label>
+                <input type="text" id="nom-entreprise" name="nom-entreprise" required>
+            </div>
+            <div class="input-group">
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" name="adresse" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <button type="submit" class="cta-button">Envoyer</button>
+    </form>
+</div>
+
+<!-- Pied de page -->
+<footer>
+    <p>&copy; 2024 Les P'tits Sorciers | Tous droits réservés</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
