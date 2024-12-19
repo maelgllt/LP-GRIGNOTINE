@@ -1,7 +1,9 @@
 /*
-#BF3D30 ROUGE
-#DB9A48 ORANGE
-#599C99 BLEU 
+#FB8B24 ORANGE
+#D90368 ROSE
+#820263 VIOLET
+#6BD425 VERT
+#0A0908 BLACK
 */
 
 /* Style général */
@@ -15,7 +17,7 @@ body {
 
 /* Bandeau en haut */
 .header-banner {
-    background-color: #BF3D30;
+    background-color: #D90368;
     padding: 20px 0;
     display: flex;
     justify-content: center;
@@ -99,7 +101,7 @@ form {
 
 .form-container h2 {
     text-align: center;
-    color: #DB9A48;
+    color: #820263;
 }
 
 form h3 {
@@ -143,7 +145,7 @@ button[type="submit"] {
     display: block;
     width: 100%;
     padding: 15px;
-    background-color: #DB9A48;
+    background-color: #820263;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -154,7 +156,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #BF3D30;
+    background-color: #D90368;
 }
 
 /* Responsive design pour les champs Nom et Prénom */
