@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les P'tits Sorciers</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Bandeau en haut avec logo et titre -->
@@ -25,14 +25,14 @@
                 tout en valorisant les produits de producteurs locaux.</p>
         </div>
         <div class="image-container">
-            <img src="../images/image1.jpg" alt="cookies">
+            <img src="./images/image1.jpg" alt="cookies">
         </div>
     </section>
 
     <!-- Deuxième section avec image à droite et texte à gauche -->
     <section class="content-section">
         <div class="image-container">
-            <img src="../images/image2.png" alt="enfant">
+            <img src="./images/image2.png" alt="enfant">
         </div>
         <div class="text-container">
             <h2>Notre projet</h2>
@@ -44,24 +44,36 @@
 
     <div class="form-container">
         <h2>Se pré-inscrire</h2>
-        <form action="#" method="post" class="cta-form">
+        <form action="https://api.web3forms.com/submit" method="POST" class="cta-form">
+            <!-- Clé d'accès Web3Forms -->
+            <input type="hidden" name="access_key" value="e1851305-52e4-4946-a86e-5d97a7033315">
+    
+            <!-- Groupe de champs pour nom et prénom -->
             <div class="form-group">
                 <div class="input-group">
                     <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom" required>
+                    <input type="text" id="nom" name="name" required>
                 </div>
                 <div class="input-group">
                     <label for="prenom">Prénom :</label>
                     <input type="text" id="prenom" name="prenom" required>
                 </div>
             </div>
+    
+            <!-- Champ email -->
             <div class="form-group">
                 <label for="email">Email :</label>
                 <input type="email" id="email" name="email" required>
             </div>
+    
+            <!-- Redirection après soumission -->
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+    
+            <!-- Bouton d'envoi -->
             <button type="submit" class="cta-button">Envoyer</button>
         </form>
     </div>
+    
 
     <!-- Pied de page -->
     <footer>
